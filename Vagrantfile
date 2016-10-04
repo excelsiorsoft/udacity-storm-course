@@ -3,10 +3,11 @@
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
-
+=begin
 Vagrant.configure("1") do |config|
   config.vm.boot_mode = :gui
 end
+=end
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "udacity/ud381"

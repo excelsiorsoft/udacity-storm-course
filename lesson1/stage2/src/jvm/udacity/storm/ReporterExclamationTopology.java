@@ -55,11 +55,11 @@ public class ReporterExclamationTopology {
   public static class ExclamationBolt extends BaseRichBolt
   {
     // To output tuples from this bolt to the next stage bolts, if any
-    OutputCollector _collector;
+    private OutputCollector _collector;
 
     //********* ADDED 2-of-4
     // place holder to keep the connection to redis
-    RedisConnection<String,String> redis;
+    private RedisConnection<String,String> redis;
     //********* END 2-of-4
 
     @Override
